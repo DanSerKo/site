@@ -1,0 +1,49 @@
+#slide {
+	width: 98%;
+	height: 450px;
+	margin-left: 20px;
+	top: 0;
+	left: 0;
+	margin-bottom:20px;
+}
+
+#slide2 {
+	width: 98%;
+	height: 450px;
+	margin-left: 20px;
+	top: 0;
+	left: 0;
+	margin-bottom:20px;
+}
+
+#slide3 {
+	width: 98%;
+	height: 450px;
+	margin-left: 20px;
+	top: 0;
+	left: 0;
+	margin-bottom:20px;
+}
+
+#logotip {
+           width: 10%;
+           }
+
+
+
+ul#list li {
+    display: inline-block;
+}
+
+.el {
+    margin: 85px;
+}
+
+.images {
+    width: 286px;
+    height: 286px;
+
+}
+
+
+

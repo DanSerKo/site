@@ -2,12 +2,18 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
     <meta charset="UTF-8">
     <title>Title</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Застройщики Ижевска</a>
+  <a id="logotip" class="navbar-brand" href="#">
+    <img   src="images\eliLgVPZYcQ.jpg" width="80%">
+  </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -26,23 +32,30 @@
 
     </ul>
       <div class="d-flex">
-  <div class="dropdown mr-1">
-    <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-      Аккаунт
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-      <a class="dropdown-item" href="#">Action</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-    </div>
+<div class="btn-group">
+  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Кабинет
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Регистрация</a>
+    <a class="dropdown-item" href="#">Личный кабинет</a>
+    <a class="dropdown-item" href="#">Закладки</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Контакты</a>
   </div>
+</div>
+</div>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
 </nav>
-<div class="bd-example">
+
+
+
+
+<div  class="bd-example">
   <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -50,25 +63,25 @@
       <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
-      <div class="carousel-item active">
+      <div id="slide" class="carousel-item active">
         <img src="images\Alexandrovo_7_1280x800.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h5>Первый дом</h5>
+          <p>И бабка в нем!</p>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="..." class="d-block w-100" alt="...">
+      <div id="slide2" class="carousel-item">
+        <img src="images\76_Image_1554206076_746-2.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h5>Второй дом</h5>
+          <p>Живи с котом!</p>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="..." class="d-block w-100" alt="...">
+      <div id="slide3" class="carousel-item">
+        <img src="images\Без названия.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          <h5>Третий дом</h5>
+          <p>Сам рифмуй!</p>
         </div>
       </div>
     </div>
@@ -81,6 +94,69 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+</div>
+
+
+
+
+    <div class="card0">
+      <ul id="list">
+        <li class="el">
+<div class="card" id="cardd" style="width: 18rem;">
+  <a class="images">
+      <img src="images\e8fbbc744605fa316dcfd225327956a5.png" class="card-img-top" alt="...">
+  </a>
+
+  <div class="card-body">
+    <h5 class="card-title">Альянс</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-success">Перейти к ЖК</a>
+  </div>
+   </div>
+        </li>
+        <li class="el">
+<div class="card" id="cardd1" style="width: 18rem;">
+  <a class="images">
+      <img src="images\704b69c5eaccd6c385c4e19e5587eac6.png" class="card-img-top" alt="..." style="height: 286px;">
+    </a>
+  <div class="card-body">
+    <h5 class="card-title">Бавария-Строй</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-success">Перейти к ЖК</a>
+  </div>
+  </div>
+        </li >
+        <li class="el">
+<div class="card" id="cardd2" style="width: 18rem;">
+  <a class="images">
+    <img src="images\964fa786ef0287142a91e68ee11b7b05.png" class="card-img-top" alt="..." style="height: 286px;">
+  </a>
+    <div class="card-body">
+    <h5 class="card-title">УралДомСтрой</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-success">Перейти к ЖК</a>
+  </div>
+   </div>
+        </li>
+
+        </li >
+        <li class="el">
+<div class="card" id="cardd2" style="width: 18rem;">
+  <a class="images">
+    <img src="images\78969c0cc60231bcd9b2928307ce9d6c.jpg" class="card-img-top" alt="..." style=" height: 286px;">
+  </a>
+    <div class="card-body">
+    <h5 class="card-title">СпецСтрой России</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-success">Перейти к ЖК</a>
+  </div>
+   </div>
+        </li>
+      </ul>
+
+
+
+
 </div>
 </body>
 </html>
